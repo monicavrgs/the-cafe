@@ -1,0 +1,229 @@
+body{
+    font-family: 'Inconsolata', monospace;
+    line-height: 25px;
+}
+
+
+
+/*navigation menu*/
+.navigation{
+    background-color: #000;
+    padding: 6px 0;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 15px;
+    position: fixed;
+}
+
+.navigation a{
+    color: #FFF;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation-item{
+    padding: 8px 12.5%;
+}
+
+.navigation-item:hover{
+    background-color: #a8a8a8;
+    cursor: pointer;
+}
+
+/*header content*/
+
+.header-presentation{
+    background-image: url("../images/cafeshop.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #FFF;
+}
+
+
+.opening-hours, .title, .header-address{
+    padding: 0 5px;
+    margin: 10px 18px;
+}
+
+.title{
+    font-size: 90px;
+    align-self: center;
+    text-align: center;
+    max-width: min-content;
+    line-height: 150%;
+}
+
+.opening-hours, .header-address{
+    font-size: 15px;
+}
+
+.opening-hours{
+    background-color: #000;
+}
+
+/*main*/
+
+.main{
+    background-color: #f7f7f7fb;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.about, .menu, .contact{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.subtitle, .fyi, .button{
+    color: #FFF;
+    background-color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle{
+    align-self: center;
+    width: 200px;
+    margin: 40px 0;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.about-content, .contact-content{
+    margin: 20px 0;
+}
+
+#about-quote{
+    font-style: italic;
+}
+
+.quotation{
+    background-color: #f0efef;
+    padding: 15px;
+    margin-bottom: 30px;
+    box-shadow: -5px 0 #d6d5d5;
+}
+
+/*menu*/
+
+.menu-box{
+    margin: 15px 8px;
+    font-size: 20px;
+    border: solid 1px #d1d0d0;
+    box-shadow: 0 2px 5px 0 #cfcfcf;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.menu-nav{
+    display: flex;
+    margin-bottom: 10px;
+    padding: 8px 8px;
+    border-bottom: solid 1px #d1d0d0;
+    box-shadow: 0 2px 5px 0 #cfcfcf;
+}
+
+.menu-section{
+    width: 50%;
+    text-align: center;
+}
+
+.menu-section:hover{
+    background-color: #8f8e8e;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.food-menu, .drinks-menu{
+    padding: 15px;
+}
+
+.drinks-menu{
+    display: none;
+}
+
+.menu-option, .option-description{
+    padding: 8px 0;
+}
+
+.menu-option{
+    margin-top: 16px;
+}
+
+.option-description{
+    color: #929292;
+}
+
+.information-item{
+    margin: 10px 0;
+}
+
+/*contact*/
+
+.fyi{
+padding: 5px 10px;
+}
+
+.information-bold, strong{
+    font-weight: bold;
+}
+
+.contact-input{
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 18px 8px;
+    margin: 10px 0;
+    border: solid 1px #c9c9c9;
+    margin: 20px 0;
+}
+
+#date{
+    display: flex;
+    flex-direction: row;
+}
+
+.button{
+    font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+    padding: 12px 24px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #c0c0c0;
+    color: #000;
+}
+
+
+/*footer*/
+
+.footer{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 18px;
+    background-color: #f1f1f1;
+
+}
+
+.footer a{
+    color: #000;
+    text-decoration: underline;
+}
+
+.footer a:hover{
+    color: #04AA6D;
+}

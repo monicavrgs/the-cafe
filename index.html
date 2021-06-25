@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cafe</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+</head>
+<body class='teste'>
+    <header class='header' id='home'>
+        <nav class='navigation'>
+            <ul class='nav-list'>
+                <li class='navigation-item'> <a href="#home"> Home</li></a>
+
+                <li class='navigation-item'><a href="#about">About</a></li>
+
+                <li class='navigation-item'><a href="#menu">Menu</a></li>
+
+                <li class='navigation-item'><a href="#contact">Where</a></li>
+            </ul>
+        </nav>
+
+        <section class='header-presentation'>
+            <p class='opening-hours'>Open from 6am to 5pm</p>
+            <h1 class='title'>the Cafe</h1>
+            <p class='header-address'>15 Adr street, 5015</p>
+        </section>
+    </header>
+
+    <main class='main'>
+        <section class='about' id='about'>
+            <h2 class='subtitle'>About the cafe</h2>
+
+            <p class='about-content'>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <p class='about-content'>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+
+            <div class='quotation'>
+                <p class='about-content' id='about-quote'><q>"Use products from nature for what it's worth - but never too early, nor too late."</q> Fresh is the new sweet.</p>
+                <p class='about-content'>Chef, Coffeeist and Owner: Liam Brown</p>    
+            </div>
+
+            <img src="images/coffeeshop.jpg" alt="picture of a coffee shop">
+
+            <div class='information'>
+                <p class='information-item'><span class='information-bold'>Opening hours:</span> everyday com 6am to 5pm.</p>
+                <p class='information-item'><span class='information-bold'>Address:</span> 14 Adr street, 5015, NY</p>
+            </div>
+        </section>
+
+        <section class='menu' id='menu'>
+            <h2 class='subtitle'>Menu</h2>
+
+            <div class='menu-box'>
+
+                <div class='menu-nav'>
+                    <h3 class='menu-section' id='menu-eat' onclick='showFoodMenu()'>Eat</h3>
+                    <h3 class='menu-section' id='menu-drink' onclick = 'showDrinksMenu()'>Drink</h3>
+                </div>
+
+                <div class='food-menu' id='food-menu'>
+                    <h4 class='menu-option'>Bread Basket</h4>
+                    <p class='option-description'>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+                    <h4 class='menu-option'>Honey Almond Granola with Fruits</h4>
+                    <p class='option-description'>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+
+                    <h4 class='menu-option'>Belgian Waffle</h4>
+                    <p class='option-description'>Vanilla flavored batter with malted flour 7.50</p>
+
+                    <h4 class='menu-option'>Scrambled Eggs</h4>
+                    <p class='option-description'>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+
+                    <h4 class='menu-option'>Blueberry Pancakes</h4>
+                    <p class='option-description'>With syrup, butter and lots of berries 8.50</p>
+                </div>
+
+                <div class='drinks-menu' id='drinks-menu'>
+                    <h4 class='menu-option'>Coffee</h4>
+                    <p class='option-description'>Regular coffee 2.50</p>
+
+                    <h4 class='menu-option'>Chocolato</h4>
+                    <p class='option-description'>Chocolate espresso with milk 4.50</p>
+
+                    <h4 class='menu-option'>Corretto</h4>
+                    <p class='option-description'>Whiskey and coffee 5.00</p>
+
+                    <h4 class='menu-option'>Iced Tea</h4>
+                    <p class='option-description'>Hot tea, except not hot 3.00</p>
+
+                    <h4 class='menu-option'>Soda</h4>
+                    <p class='option-description'>Coke, Sprite, Fanta, etc. 2.50</p>
+                </div>
+            </div>
+        </section>
+
+        <section class='contact' id='contact'>
+            <h2 class='subtitle'>Where to find us</h2>
+
+            <p class='contact-content'>Find us at some address at some place.</p>
+
+            <img src="images/map.jpg" alt="picture of an intersection from above">
+
+            <p class='contact-content'><span class='fyi'>FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+
+            <p class='contect-content'><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+
+            <form action="" class='form'>
+                <input type="text" id='name' class='contact-input' placeholder="Name" required='required'>
+                <input type="number" id='numer-of-people' class='contact-input' placeholder="How many people" required='required'>
+                <input type="datetime-local" id="date" class='contact-input' required='required'>
+                <textarea id="contact-message" cols="0" rows="0" class='contact-input' placeholder="Message/Special requirements"></textarea>
+                <input type="submit" value="Send message" class='button'>
+            </form>
+        </section>
+    </main>
+
+    <footer class='footer'>
+        <p>Powered by <a href="">w3.css</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
